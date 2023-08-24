@@ -27,7 +27,7 @@ def saludo(name, age):
         "msg": f"Hola, soy {name} y tengo {age} años"
     }    
     
-app.route('/api/search/<category>', methods=['POST', 'PUT'])
+app.route('/api/search/<category><type>', methods=['POST', 'PUT'])
 def search_post_put(category):
 
     params = request.args
